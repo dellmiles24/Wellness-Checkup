@@ -29,3 +29,17 @@ let questions= [
         choices: ["Stressed", "Tired", "Lonely", "Fustrated", "Anxious", "Optimistic"],
     },
 ];
+
+
+var startBtn = document.querySelector("#start");
+
+function startQuiz() {
+    
+    var startScreenEl = document.getElementById("welcome");
+    startScreenEl.setAttribute("class", "hide");
+  
+    
+    
+}
+
+startBtn.onclick = startQuiz();
