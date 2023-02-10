@@ -32,27 +32,131 @@
 
 
 
+// let questionIndex = 0;
+// let questions = [
+//   {
+//     message: "Do you get 6 to 8 hours of sleep a day?",
+//     answers: [
+//       { text: "Yes", value: "Yes" },
+//       { text: "No", value: "No" }
+//     ]
+//   },
+//   {
+//     message: "Do you eat 3 healthy meals a day and drink plenty of water?",
+//     answers: [
+//         { text: "Yes", value: "Yes" },
+//         { text: "No", value: "No" }
+//     ]
+//   },
+//   {
+//     message: "Do you exercise regularly?",
+//     answers: [
+//         { text: "Yes", value: "Yes" },
+//         { text: "No", value: "No" }
+//     ]
+//   },
+//   {
+//     message: "Do you have someone you can talk to when you're feeling sad?",
+//     answers: [
+//       { text: "Yes", value: "Yes" },
+//       { text: "No", value: "No" }
+//     ]
+//   },
+//   {
+//     message: "Do you turn to drugs and alcohol when you feel upset?",
+//     answers: [
+//       { text: "Yes", value: "Yes" },
+//       { text: "No", value: "No" }
+//     ]
+//   },
+//   {
+//     message: "Overall how are you feeling?",
+//     answers: [
+//       { text: "Yes", value: "Tired" },
+//       { text: "No", value: "Stressed" },
+//       { text: "No", value: "Lonely" }
+//       { text: "No", value: "Fustrated" }
+//       { text: "No", value: "Anxious" }
+//       { text: "No", value: "Optimistic" }
+//     ]
+//   }
+// ];
+
+// function renderQuestion() {
+//   let question = questions[questionIndex];
+//   let answersHTML = question.answers
+//     .map(answer => {
+//       return `<button value="${answer.value}">${answer.text}</button>`;
+//     })
+//     .join("");
+//   document.querySelector("#questionMsg").innerHTML = question.message;
+//   document.querySelector("#answers").innerHTML = answersHTML;
+// }
+
+// document.addEventListener("DOMContentLoaded", function() {
+//   document.querySelector(".start-btn").addEventListener("click", function() {
+//     renderQuestion();
+//   });
+//   document.querySelector("#answers").addEventListener("click", function(event) {
+//     if (event.target.tagName === "BUTTON") {
+//       questionIndex++;
+//       if (questionIndex < questions.length) {
+//         renderQuestion();
+//       } else {
+//         document.querySelector("#questionMsg").innerHTML = "Thank you for taking the Wellness Check-Up!";
+//         document.querySelector("#answers").innerHTML = "";
+//       }
+//     }
+//   });
+// });
+
+
 let questionIndex = 0;
 let questions = [
   {
-    message: "Have you had your breakfast?",
+    message: "Do you get 6 to 8 hours of sleep a day?",
     answers: [
       { text: "Yes", value: "Yes" },
       { text: "No", value: "No" }
     ]
   },
   {
-    message: "Did you make your bed?",
+    message: "Do you eat 3 healthy meals a day and drink plenty of water?",
     answers: [
         { text: "Yes", value: "Yes" },
         { text: "No", value: "No" }
     ]
   },
   {
-    message: "Did you check your schedule for the day?",
+    message: "Do you exercise regularly?",
     answers: [
         { text: "Yes", value: "Yes" },
         { text: "No", value: "No" }
+    ]
+  },
+  {
+    message: "Do you have someone you can talk to when you're feeling sad?",
+    answers: [
+        { text: "Yes", value: "Yes" },
+        { text: "No", value: "No" }
+    ]
+  },
+  {
+    message: "Do you turn to drugs and alcohol when you feel upset?",
+    answers: [
+        { text: "Yes", value: "Yes" },
+        { text: "No", value: "No" }
+    ]
+  },
+  {
+    message: "Overall how are you feeling?",
+    answers: [
+        { text: "Stressed", value: "Stressed" },
+        { text: "Tired", value: "Tired" },
+        { text: "Lonely", value: "Lonely" },
+        { text: "Fustrated", value: "Fustrated" },
+        { text: "Anxious", value: "Anxious" },
+        { text: "Optimistic", value: "Optimistic" }
     ]
   }
 ];
