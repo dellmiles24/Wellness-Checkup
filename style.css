@@ -15,14 +15,12 @@ body{
 }
 
 
-.box{
-  width: 55%;
-  height: 200px;
-  border: 15px solid rgb(51, 135, 51);
-  margin: 20px 20px;
+.welcome{
+  margin: 0;
   position: relative;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Georgia, Times, 'Times New Roman', serif;
   font-weight: 500;
+  padding-top: 20px;
 }
 
 
@@ -51,10 +49,3 @@ button:focus{
   position: relative;
 }
 
-
-
-
-/* -------------------------------------Are you ready to get started? --------------------------*/
-.subtitle{
-  background-color: white;
-}
