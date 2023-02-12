@@ -1,7 +1,7 @@
 # Wellness-Checkup
 
 ## Description
-The Wellness Checkup website is used to help check your mood for the day. It will ask a series of questions and then provide you with a quote to remember.
+The Wellness Checkup website is used to help check your daily mood. The homepage displays a new quote every time you refresh the page. It will ask a series of questions and then provide you with a quote to remember.
 
 ## Installation
 

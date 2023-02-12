@@ -30,6 +30,8 @@
 //     },
 // ];
 
+var clientID = '5c6809ebe3e944f4a860c61210b6d97d';
+var clientSecret = 'e904065b2cac4d75a22173c60f97b540';
 let questionIndex = 0;
 let questions = [
   {
