@@ -1,3 +1,18 @@
+// fetch(" https://api.goprogram.ai/inspiration)
+// .then( (response) => {
+// 5
+// return response. json();
+// })
+// .then((data) => {
+// console.log(data. quote);
+// });
+// // testCall();
+// banner.innerHTML = data. quote;
+// React
+// Reply
+
+
+
 
 
 let questionIndex = 0;
@@ -77,4 +92,28 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
+function displayQuotes(){
+    let banner= document.getElementById('header')
+    fetch ('https://api.goprogram.ai/inspiration',{banner})
+        .then(response=> response.json())
+        .then(data => console.log(data));
+        return displayQuotes
+}
 
+    
+
+
+// fetch('https://api.goprogram.ai/inspiration')
+// .then( (response) => {
+//     return response.json();
+    
+// })
+// .then((data)=> {
+//     console.log(data.quote);
+// });
+// banner.innerHTML=data.quote;
+    
+
+// const clientId= 'f896823bdaa7451c9d12d03dd086300d';
+// const clientSecretId= 'f465fbdee6b84f748528f3abf85eb010';
+// const redirectUri=
