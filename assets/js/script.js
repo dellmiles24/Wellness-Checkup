@@ -76,6 +76,10 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   });
+  let banner= document.getElementById('header')
+fetch ('https://api.goprogram.ai/inspiration',{banner})
+    .then(response=> response.json())
+    .then(data => console.log(data));
 });
 
 
