@@ -92,26 +92,31 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
 });
-function displayQuotes(){
-    let banner= document.getElementById('header')
-    fetch ('https://api.goprogram.ai/inspiration',{banner})
-        .then(response=> response.json())
-        .then(data => console.log(data));
-        return displayQuotes
-}
+// function displayQuotes(){
 
+
+
+// display inspiration API
+// let banner= document.getElementById('header')
+// fetch ('https://api.goprogram.ai/inspiration',{banner})
+//     .then(response=> response.json())
+//     .then(data => console.log(data));
     
+let banner= document.getElementById('header')
+fetch ('https://api.goprogram.ai/inspiration',{banner})
+    .then(response=> response.json())
+    .then(data =>{console.log(data.quote)
+      let quote = data.quote
+      let dailyQuote =`
+      ${quote}
+      `
+    let quoteEl = document.querySelector(".quote-element")
+    quoteEl.append(dailyQuote)
+    }
+     ); 
 
 
-// fetch('https://api.goprogram.ai/inspiration')
-// .then( (response) => {
-//     return response.json();
-    
-// })
-// .then((data)=> {
-//     console.log(data.quote);
-// });
-// banner.innerHTML=data.quote;
+
     
 
 // const clientId= 'f896823bdaa7451c9d12d03dd086300d';
