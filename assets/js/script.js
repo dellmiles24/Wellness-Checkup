@@ -87,8 +87,7 @@ fetch ('https://api.goprogram.ai/inspiration',{banner})
       `
     
     let quoteEl = document.querySelector(".quote-element")
-    quoteEl.append(dailyQuote)
-    
+    quoteEl.append(dailyQuote) 
     }
      );
 });
