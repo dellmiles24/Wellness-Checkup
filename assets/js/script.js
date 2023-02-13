@@ -76,10 +76,21 @@ document.addEventListener("DOMContentLoaded", function() {
       }
     }
   });
+  
   let banner= document.getElementById('header')
 fetch ('https://api.goprogram.ai/inspiration',{banner})
     .then(response=> response.json())
-    .then(data => console.log(data));
+    .then(data =>{console.log(data.quote) 
+      let quote = data.quote
+      let dailyQuote =`
+      ${quote}
+      `
+    
+    let quoteEl = document.querySelector(".quote-element")
+    quoteEl.append(dailyQuote)
+    
+    }
+     );
 });
 
 
