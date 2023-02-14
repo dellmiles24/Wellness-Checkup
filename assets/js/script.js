@@ -90,6 +90,18 @@ fetch ('https://api.goprogram.ai/inspiration',{banner})
     quoteEl.append(dailyQuote) 
     }
      );
+
+    fetch ('https://emojihub.yurace.pro/api/all/group/face-negative')
+    .then(response=> response.json())
+    .then(data =>{console.log(data.emoji)
+      let emoji = data.emoji
+      let dailyMood =`
+      ${emoji}
+      `
+      let emojiEl = document.querySelector(".emoji-element")
+      emojiEl.append(dailyMood)
+    })
+
 });
 
 
