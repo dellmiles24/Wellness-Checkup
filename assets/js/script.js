@@ -64,17 +64,6 @@ var showQuestion = function(questions) {
   
 };
 
-// fetch("https://api.goprogram.ai/inspiration")
-// .then( (response) => {
-// return response. json();
-// })
-// .then((data) => {
-// console.log(data.quote);
-// });
-// banner.innerHTML = data.quote;
-  
-
-
 let banner= document.getElementById('header')
 fetch ('https://api.goprogram.ai/inspiration',{banner})
     .then(response=> response.json())
@@ -87,3 +76,17 @@ fetch ('https://api.goprogram.ai/inspiration',{banner})
     quoteEl.append(dailyQuote)
     }
      );
+
+     
+    fetch ('https://emoji-api.com/emojis?search=computer&access_key=84b89cd7c9a92edbd0d59519259b08663c98d8ce')
+      .then(response=> response.json())
+      .then (data => {console.log(data.emoji)
+      let emoji= data.emoji
+      let myEmoji= `
+        ${emoji}
+      `
+      let emojiEl= document.querySelector('.emoji-selector')
+        emojiEl.append(myEmoji)
+      }
+      );
+  
