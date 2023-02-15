@@ -1,6 +1,6 @@
 # Wellness-Checkup
 
-URL: http://127.0.0.1:5500/index.html
+URL:
 
 ## Description
 The Wellness Checkup website is used to help check your daily mood. The homepage displays a new quote every time you refresh the page. It will ask a series of questions, and then play a song track based on your mood for the day.

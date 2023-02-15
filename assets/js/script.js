@@ -1,5 +1,5 @@
-var clientID = '5c6809ebe3e944f4a860c61210b6d97d';
-var clientSecret = 'e904065b2cac4d75a22173c60f97b540';
+var rootURL = 'https://emoji-api.com/';
+var apiKey = 'f91d5231674dff5e5b94fe04a7451bf54b7fed22';
 let questionIndex = 0;
 let questions = [
   {
@@ -91,18 +91,16 @@ fetch ('https://api.goprogram.ai/inspiration',{banner})
     }
      );
 
-    fetch ('https://emojihub.yurace.pro/api/all/group/face-negative')
+    fetch ('https://emoji-api.com/emojis?access_key=f91d5231674dff5e5b94fe04a7451bf54b7fed22')
     .then(response=> response.json())
-    .then(data =>{console.log(data.emoji)
-      let emoji = data.emoji
-      let dailyMood =`
-      ${emoji}
-      `
-      let emojiEl = document.querySelector(".emoji-element")
-      emojiEl.append(dailyMood)
+    .then(data =>loadEmoji(data))
     })
 
-});
+    function loadEmoji(data) {
+      data.forEach(emoji=>{
+        let li = document.createElement('li');
+      })
+    }
 
 
 
