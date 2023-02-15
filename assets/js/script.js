@@ -34,7 +34,6 @@ var questions= [
   ];
 
 var nextBtn = document.getElementById('NEXT')
-// var noBtn = document.getElementById('no')
 var questionsEl = document.getElementById('questions');
 var answerEl = document.getElementById('answers');
 var choicesEl = document.getElementById('choices');
@@ -53,9 +52,7 @@ var startQuiz = function(questions) {
 nextBtn.addEventListener('click', function(){
   startQuiz(questions)
 });
-// noBtn.addEventListener('click', function(){
-//   startQuiz(questions)
-// });
+
 var nextQuestion = function(){
   showQuestion(questionOrder[currentQuestionIndex++])
 }
@@ -63,17 +60,6 @@ var showQuestion = function(questions) {
   questionsEl.innerText = questions.message
   
 };
-
-// fetch("https://api.goprogram.ai/inspiration")
-// .then( (response) => {
-// return response. json();
-// })
-// .then((data) => {
-// console.log(data.quote);
-// });
-// banner.innerHTML = data.quote;
-  
-
 
 let banner= document.getElementById('header')
 fetch ('https://api.goprogram.ai/inspiration',{banner})
