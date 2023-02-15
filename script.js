@@ -1,20 +1,3 @@
-// fetch(" https://api.goprogram.ai/inspiration)
-// .then( (response) => {
-// 5
-// return response. json();
-// })
-// .then((data) => {
-// console.log(data. quote);
-// });
-// // testCall();
-// banner.innerHTML = data. quote;
-// React
-// Reply
-
-
-
-
-
 let questionIndex = 0;
 let questions = [
   {
@@ -95,13 +78,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // function displayQuotes(){
 
 
-
-// display inspiration API
-// let banner= document.getElementById('header')
-// fetch ('https://api.goprogram.ai/inspiration',{banner})
-//     .then(response=> response.json())
-//     .then(data => console.log(data));
-    
 let banner= document.getElementById('header')
 fetch ('https://api.goprogram.ai/inspiration',{banner})
     .then(response=> response.json())
@@ -117,8 +93,31 @@ fetch ('https://api.goprogram.ai/inspiration',{banner})
 
 
 
+  
+// let emojix= document.getElementById('utility-group')
+// function displayEmoji(){
     
+//   fetch('https://emoji-api.com/emojis?access_key=f6ce35c3a667462cfe2855da74fcd7a8e3fce')
+//     .then(response=> response.json())
+//     .then (data => {console.log(data)
+//     let emoji= data.emoji
+//     let myEmoji= `
+//       ${emoji}
+//     `
+//     let emojiEl= document. querySelector('.emoji-selector')
+//       emojiEl.append(myEmoji)
+//     }
+//     );
+//   }
+  
+    
+    // (data =>{console.log(data.emoji)
+    //   let emoji= data.emoji
+    //   let myEmoji =`
+    //   ${emoji}
+    //   `
+      
+    //   let emojiEl= document.querySelector('emoji-selector')
+    //       emojiEl.append('data.emoji')
 
-// const clientId= 'f896823bdaa7451c9d12d03dd086300d';
-// const clientSecretId= 'f465fbdee6b84f748528f3abf85eb010';
-// const redirectUri=
+    // });
